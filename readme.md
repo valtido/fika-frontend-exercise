@@ -1,6 +1,6 @@
 # FikaSearch Exercise
 
-The objective of this exercise is to clone this repository and create a `react-native` app called 'FikaSearch'. This app will comprise of a listing page of films and the names of their genres.
+The objective of this exercise is to fork this repository and create a `react-native` app called 'FikaSearch'. This app will comprise of a listing page of films and the names of their genres.
 
 You have an hour to complete this. We don't expect you to complete the exercise but we do expect you to have an understandable structure, clean code, and to be able to describe your next steps.
 
