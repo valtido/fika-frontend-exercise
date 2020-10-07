@@ -5,6 +5,8 @@ import MoviesScreen from "./components/Movies";
 import GenresScreen from "./components/Genres";
 import { NAV } from "./config/navigations";
 
+import { Primary, Secondary } from "./styles/index";
+console.log(Primary)
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -13,9 +15,9 @@ const App = () => {
       <Stack.Navigator
         screenOptions={{
           headerStyle: {
-            backgroundColor: "#f4511e"
+            backgroundColor: Primary
           },
-          headerTintColor: "#fff",
+          headerTintColor: Secondary,
           headerTitleStyle: {
             fontWeight: "bold"
           }
@@ -24,12 +26,12 @@ const App = () => {
         <Stack.Screen
           name={NAV.MOVIES}
           component={MoviesScreen}
-          options={{ title: "Movies" }}
+          options={{ title: NAV.MOVIES }}
         />
         <Stack.Screen
           name={NAV.GENRES}
           component={GenresScreen}
-          options={{ title: "Genres" }}
+          options={{ title: NAV.GENRES }}
         />
       </Stack.Navigator>
     </NavigationContainer>

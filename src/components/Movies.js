@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
 import { IMAGE_BASE, MOVIES } from "../config/const";
 import Tabs from "./Tabs";
+import {SpaceSmall, MaxHeight, Thumbnail} from '../styles';
 
 const styles = StyleSheet.create({
   app: {
@@ -10,16 +11,16 @@ const styles = StyleSheet.create({
   },
   movies: {
     flex: 1,
-    padding: 10,
-    maxHeight: 500
+    padding: SpaceSmall,
+    maxHeight: MaxHeight
   },
   movie: {
     flex: 1,
     marginBottom: 10
   },
   poster: {
-    width: 50,
-    height: 50
+    width: Thumbnail,
+    height: Thumbnail
   }
 });
 const Movies = ({ navigation }) => {

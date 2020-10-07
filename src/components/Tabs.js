@@ -1,22 +1,23 @@
 import React from "react";
 import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
 import { NAV } from "../config/navigations";
+import {Primary, Secondary,Tertiary, SpaceSmall, SpaceLarge, MaxHeight, Thumbnail} from '../styles';
 
 const styles = StyleSheet.create({
   text: {
-    color: "#101010",
+    color: Tertiary,
     fontSize: 24,
     fontWeight: "bold"
   },
   buttonContainer: {
-    backgroundColor: "#222",
+    backgroundColor: Primary,
     borderRadius: 5,
-    padding: 10,
-    margin: 20
+    padding: SpaceSmall,
+    margin: SpaceLarge
   },
   buttonText: {
     fontSize: 20,
-    color: "#fff"
+    color: Secondary
   },
   tabContainer: {
    flex: 1,
