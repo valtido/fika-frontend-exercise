@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
 import { NAV } from "../config/navigations";
-import {Primary, Secondary,Tertiary, SpaceSmall, SpaceLarge, MaxHeight, Thumbnail} from '../styles';
+import {Primary, Secondary,Tertiary, SpaceSmall, SpaceLarge, MaxHeight} from '../styles';
 
 const styles = StyleSheet.create({
   text: {
@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
   tabContainer: {
    flex: 1,
    flexDirection: "row",
-   height: 90,
-   maxHeight: 90
+   height: MaxHeight,
+   maxHeight: MaxHeight
   }
 });
 const TabsScreen = ({ navigation }) => (
